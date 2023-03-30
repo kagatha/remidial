@@ -1,0 +1,153 @@
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+}   
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid.cols-auto > div {
+    grid-column: auto;
+    margin: auto;
+}
+
+.gap-4 {
+    gap: 4rem;
+}
+
+.hero {
+    background-color: #cbee2f;
+    color: #000000;
+}
+
+.hero > div > div > a {
+    color: #ff00ff;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5rem 2rem;
+}
+
+.hero > div > div > a:hover {
+    background-color: #c2c4be;
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.img-fluid {
+    height: auto;
+    width: 100%;
+}
+
+.content .profile {
+    margin: 4rem 0rem;
+}
+
+.content .profile > h5 {
+    font-size: medium;
+}
+
+.container.content > div > section {
+    margin: 4rem 0rem;
+}
+
+/* Mobile Screen */
+@media only screen and (min-width: 0px), (max-width: 320px) {
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .grid.cols-auto {
+        grid-template-columns: auto;
+    }
+
+    .grid.cols-auto .sm-order-first {
+        grid-row: 1;
+    }
+
+    .hero {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* Desktop Screen */
+@media only screen and (min-width: 1080px) {
+    .container {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .grid.cols-auto {
+        grid-template-columns: auto auto;
+    }
+
+    .grid.cols-auto .sm-order-first {
+        grid-row: unset;
+    }
+
+    .hero {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .content .profile {
+        max-width: 50%;
+    }
+
+    footer .form-group {
+        max-width: 50%;
+    }
+}
+
+footer .form-group {
+    margin: 1rem 0rem;
+}
+
+input.form-input, textarea.form-input {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+button.submit {
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(252, 56, 242);
+    border-radius: 10px;
+}
+
+button.submit:hover {
+    background-color: rgb(212, 255, 58);
+}
+
+.copyright {
+    background-color: #c7ff2d;
+    color: #000000;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
